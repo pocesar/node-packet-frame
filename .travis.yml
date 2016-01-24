@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - "0.12"
+  - "4"
+  - "5"
+
+branches:
+  only:
+    - master
+
+before_install:
+  - npm install grunt-cli typescript -g
+
+after_script:
+  - grunt coveralls

@@ -1,0 +1,4 @@
+--reporter list
+--check-leaks
+--ui bdd
+test/*.test.js

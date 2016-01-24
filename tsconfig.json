@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+        "moduleResolution": "node",
+        "declaration": true,
+        "newLine": "LF",
+        "noImplicitAny": true,
+        "experimentalDecorators": true,
+        "outDir": "./lib",
+        "rootDir": "./src",
+        "sourceMap": false,
+        "inlineSourceMap": true
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
