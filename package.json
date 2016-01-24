@@ -25,7 +25,7 @@
   },
   "main": "./lib/index.js",
   "scripts": {
-    "prepublish": "tsc && npm run test",
+    "prepublish": "tsc",
     "test": "mocha"
   },
   "author": "Paulo Cesar",
