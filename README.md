@@ -26,9 +26,9 @@ You can choose to drop invalid payloads, or deal with it manually.
 # How?
 
 ```es6
-import { Streams } from 'packet-frame'
+import { Parser } from 'packet-frame'
 
-var stream = new Streams.Parser({
+var stream = Parser.createStream({
     policy: 'drop' // default
 })
 

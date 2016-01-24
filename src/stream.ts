@@ -16,6 +16,10 @@ export class Parser extends stream.Transform {
         this.buffer = new Buffer(0);
     }
 
+    static createStream(options?: stream.TransformOptions) {
+        return new this(options);
+    }
+
     _transform(chunk: Buffer, encoding: string, done: Function) {
 
         this.buffer = Buffer.concat([this.buffer, chunk]);
@@ -51,6 +55,10 @@ export class Serializer extends stream.Transform {
         options.objectMode = false;
 
         super(options);
+    }
+
+    static createStream(options?: stream.TransformOptions) {
+        return new this(options);
     }
 
     _transform(chunk: Buffer, encoding: string, done: Function) {
